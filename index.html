@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Converter</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Text File Converter</h1>
+        <div class="form-group">
+            <label for="textFileInput">Select a Text File:</label>
+            <input type="file" id="textFileInput" class="form-control-file">
+        </div>
+        <div class="form-group">
+            <label for="conversionType">Conversion Type:</label>
+            <select id="conversionType" class="form-control">
+                <option value="uppercase">Uppercase</option>
+                <option value="lowercase">Lowercase</option>
+            </select>
+        </div>
+        <button onclick="convertText()" class="btn btn-primary">Convert</button>
+        <textarea id="convertedOutput" class="form-control mt-4" rows="6" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
